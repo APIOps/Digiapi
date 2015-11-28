@@ -1,0 +1,59 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "0.0.1",
+        "title": "Digi' API"
+    },
+    "paths": {
+        "/newspapers/": {
+            "get": {
+                "description": "Returns list of available newspaper titles\n",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "/newspapers/year/": {
+            "get": {
+                "description": "Returns list of available journal titles for given year\n",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "/newspapers/decade/": {
+            "get": {
+                "description": "Returns list of available journal titles for given year\n",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "/newspapers/year/month/": {
+            "get": {
+                "description": "Returns list of available journal titles for given year and month\n",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        },
+        "/journals/": {
+            "get": {
+                "description": "Returns list of available journal titles\n",
+                "responses": {
+                    "200": {
+                        "description": "Successful response"
+                    }
+                }
+            }
+        }
+    }
+}
