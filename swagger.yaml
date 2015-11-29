@@ -1,7 +1,7 @@
 swagger: '2.0'
 info:
-  version: 0.0.1
-  title: "Digi' API"
+  version: 0.0.2
+  title: "Digi-API"
 paths:
   /newspapers/:
     get:
