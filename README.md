@@ -9,3 +9,9 @@ Of course for APIOPS as a whole, one aim is to learn by doing.
 ## Business models
 Business models for this case are in wiki: https://github.com/APIOps/Digiapi/wiki/DigiAPI
 
+## API designs in Swagger 2.0 format
+Add here links to spec files. 
+
+## Mockup servers
+Add here link to mockup servers. 
+
