@@ -6,4 +6,6 @@ APIOps joint project to collaborately develop an API idea of the National Librar
 
 Of course for APIOPS as a whole, one aim is to learn by doing. 
 
+## Business models
+Business models for this case are in wiki: https://github.com/APIOps/Digiapi/wiki/DigiAPI
 
