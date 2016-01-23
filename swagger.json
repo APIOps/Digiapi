@@ -47,7 +47,7 @@
                         "name": "year",
                         "description": "wanted year",
                         "in": "path",
-                        "type": "string",
+                        "type": "integer",
                         "required": true
                     }
                 ],
@@ -81,14 +81,14 @@
                         "name": "year",
                         "description": "wanted year",
                         "in": "path",
-                        "type": "string",
+                        "type": "integer",
                         "required": true
                     },
                     {
                         "name": "month",
                         "description": "wanted month",
                         "in": "path",
-                        "type": "string",
+                        "type": "integer",
                         "required": true
                     }
                 ],
@@ -113,13 +113,13 @@
         },
         "/newspapers/decade/{decade}": {
             "get": {
-                "description": "Returns list of available newspaper titles for given decade. Path parameter 'decade' is expected to be 4-digit. For example '/newspapers/decade/2000' returns titles for 2000-2009.",
+                "description": "Returns list of available newspaper titles for given decade. Path parameter 'decade' is expected to be 4-digit integer. For example '/newspapers/decade/2000' returns titles for 2000-2009.",
                 "parameters": [
                     {
                         "name": "decade",
                         "description": "wanted decade",
                         "in": "path",
-                        "type": "string",
+                        "type": "integer",
                         "required": true
                     }
                 ],
