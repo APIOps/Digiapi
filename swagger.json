@@ -11,6 +11,31 @@
         "http"
     ],
     "paths": {
+        "/newspapers/": {
+            "get": {
+                "tags": [
+                    "newspapers"
+                ],
+                "description": "Returns list of available newspaper titles",
+                "responses": {
+                    "200": {
+                        "description": "Successful response",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/Newspaper"
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
         "/newspapers/{year}": {
             "get": {
                 "tags": [
@@ -45,19 +70,9 @@
                 }
             }
         },
-        "/newspapers/year/": {
-            "get": {
-                "description": "Returns list of available journal titles for given year",
-                "responses": {
-                    "200": {
-                        "description": "Successful response"
-                    }
-                }
-            }
-        },
         "/newspapers/decade/": {
             "get": {
-                "description": "Returns list of available journal titles for given year",
+                "description": "Returns list of available journal titles for given decade",
                 "responses": {
                     "200": {
                         "description": "Successful response"
