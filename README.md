@@ -13,5 +13,5 @@ Business models for this case are in wiki: https://github.com/APIOps/Digiapi/wik
 In progress version of the [meta API spec](https://github.com/APIOps/Digiapi/blob/master/swagger.yaml)  
 
 ## Mockup servers
-Add here link to mockup servers. 
+In progress version of the [meta API](https://github.com/APIOps/Digiapi/tree/master/nodejs-server)
 
