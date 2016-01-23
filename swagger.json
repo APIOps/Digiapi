@@ -70,22 +70,12 @@
                 }
             }
         },
-        "/newspapers/decade/": {
-            "get": {
-                "description": "Returns list of available journal titles for given decade",
-                "responses": {
-                    "200": {
-                        "description": "Successful response"
-                    }
-                }
-            }
-        },
         "/newspapers/{year}/{month}": {
             "get": {
                 "tags": [
                     "newspapers"
                 ],
-                "description": "Returns list of available journal titles for given year and month",
+                "description": "Returns list of available newspaper titles for given year and month",
                 "parameters": [
                     {
                         "name": "year",
@@ -121,12 +111,33 @@
                 }
             }
         },
-        "/journals/": {
+        "/newspapers/decade/{decade}": {
             "get": {
-                "description": "Returns list of available journal titles",
+                "description": "Returns list of available newspaper titles for given decade. Path parameter 'decade' is expected to be 4-digit. For example '/newspapers/decade/2000' returns titles for 2000-2009.",
+                "parameters": [
+                    {
+                        "name": "decade",
+                        "description": "wanted decade",
+                        "in": "path",
+                        "type": "string",
+                        "required": true
+                    }
+                ],
                 "responses": {
                     "200": {
-                        "description": "Successful response"
+                        "description": "Successful response",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/Newspaper"
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
                     }
                 }
             }
