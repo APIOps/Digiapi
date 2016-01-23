@@ -2,7 +2,7 @@ swagger: '2.0'
 info:
   version: 0.0.2
   title: Digi-API
-  description: API for The National Library of Finland. Created with help of Finnish APIOps community in various community driven APIOps Jams. 
+  description: API for The National Library of Finland.
 host: meta.kansalliskirjasto.fi
 basePath: /api
 schemes:
@@ -99,6 +99,28 @@ paths:
           description: sort by title. For ascending use 'asc' and for descending use 'desc')
           type: string
           default: "asc"
+      responses:
+        '200':
+          description: Successful response
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Newspaper'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  '/newspapers/{id}':
+    get:
+      tags:
+        - newspapers
+      description: Returns details of given newspaper
+      parameters:
+        - name: id
+          description: ID of wanted newspaper
+          in: path
+          type: integer
+          required: true
       responses:
         '200':
           description: Successful response
