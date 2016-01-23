@@ -2,22 +2,52 @@
     "swagger": "2.0",
     "info": {
         "version": "0.0.2",
-        "title": "Digi-API"
+        "title": "Digi-API",
+        "description": "API for The National Library of Finland."
     },
+    "host": "meta.kansalliskirjasto.fi",
+    "basePath": "/api",
+    "schemes": [
+        "http"
+    ],
     "paths": {
-        "/newspapers/": {
+        "/newspapers/{year}": {
             "get": {
-                "description": "Returns list of available newspaper titles\n",
+                "tags": [
+                    "newspapers"
+                ],
+                "description": "Returns list of available newspaper titles by year",
+                "parameters": [
+                    {
+                        "name": "year",
+                        "description": "wanted year",
+                        "in": "path",
+                        "type": "string",
+                        "required": true
+                    }
+                ],
                 "responses": {
                     "200": {
-                        "description": "Successful response"
+                        "description": "Successful response",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/Newspaper"
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
                     }
                 }
             }
         },
         "/newspapers/year/": {
             "get": {
-                "description": "Returns list of available journal titles for given year\n",
+                "description": "Returns list of available journal titles for given year",
                 "responses": {
                     "200": {
                         "description": "Successful response"
@@ -27,7 +57,7 @@
         },
         "/newspapers/decade/": {
             "get": {
-                "description": "Returns list of available journal titles for given year\n",
+                "description": "Returns list of available journal titles for given year",
                 "responses": {
                     "200": {
                         "description": "Successful response"
@@ -37,7 +67,7 @@
         },
         "/newspapers/year/month/": {
             "get": {
-                "description": "Returns list of available journal titles for given year and month\n",
+                "description": "Returns list of available journal titles for given year and month",
                 "responses": {
                     "200": {
                         "description": "Successful response"
@@ -47,11 +77,48 @@
         },
         "/journals/": {
             "get": {
-                "description": "Returns list of available journal titles\n",
+                "description": "Returns list of available journal titles",
                 "responses": {
                     "200": {
                         "description": "Successful response"
                     }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "Newspaper": {
+            "type": "object",
+            "required": [
+                "id",
+                "title"
+            ],
+            "properties": {
+                "id": {
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "tag": {
+                    "type": "string"
+                }
+            }
+        },
+        "Error": {
+            "type": "object",
+            "required": [
+                "code",
+                "message"
+            ],
+            "properties": {
+                "code": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "message": {
+                    "type": "string"
                 }
             }
         }
