@@ -14,7 +14,22 @@ paths:
       tags:
       - "newspapers"
       description: "Returns list of available newspaper titles"
-      parameters: []
+      parameters:
+      - name: "limit"
+        in: "query"
+        description: "number of newspapers to return"
+        required: false
+        type: "integer"
+        default: 100
+        maximum: 5000.0
+        minimum: 100.0
+      - name: "order"
+        in: "query"
+        description: "sort by title. For ascending use 'asc' and for descending use\
+          \ 'desc')"
+        required: false
+        type: "string"
+        default: "asc"
       responses:
         200:
           description: "Successful response"
@@ -29,14 +44,29 @@ paths:
   /newspapers/decade/{decade}:
     get:
       description: "Returns list of available newspaper titles for given decade. Path\
-        \ parameter 'decade' is expected to be 4-digit. For example '/newspapers/decade/2000'\
+        \ parameter 'decade' is expected to be 4-digit integer. For example '/newspapers/decade/2000'\
         \ returns titles for 2000-2009."
       parameters:
       - name: "decade"
         in: "path"
         description: "wanted decade"
         required: true
+        type: "integer"
+      - name: "limit"
+        in: "query"
+        description: "number of newspapers to return"
+        required: false
+        type: "integer"
+        default: 1000
+        maximum: 50000.0
+        minimum: 1000.0
+      - name: "order"
+        in: "query"
+        description: "sort by title. For ascending use 'asc' and for descending use\
+          \ 'desc')"
+        required: false
         type: "string"
+        default: "asc"
       responses:
         200:
           description: "Successful response"
@@ -58,7 +88,22 @@ paths:
         in: "path"
         description: "wanted year"
         required: true
+        type: "integer"
+      - name: "limit"
+        in: "query"
+        description: "number of newspapers to return"
+        required: false
+        type: "integer"
+        default: 100
+        maximum: 5000.0
+        minimum: 100.0
+      - name: "order"
+        in: "query"
+        description: "sort by title. For ascending use 'asc' and for descending use\
+          \ 'desc')"
+        required: false
         type: "string"
+        default: "asc"
       responses:
         200:
           description: "Successful response"
@@ -81,12 +126,27 @@ paths:
         in: "path"
         description: "wanted year"
         required: true
-        type: "string"
+        type: "integer"
       - name: "month"
         in: "path"
         description: "wanted month"
         required: true
+        type: "integer"
+      - name: "limit"
+        in: "query"
+        description: "number of newspapers to return"
+        required: false
+        type: "integer"
+        default: 100
+        maximum: 5000.0
+        minimum: 100.0
+      - name: "order"
+        in: "query"
+        description: "sort by title. For ascending use 'asc' and for descending use\
+          \ 'desc')"
+        required: false
         type: "string"
+        default: "asc"
       responses:
         200:
           description: "Successful response"

@@ -3,6 +3,8 @@
 exports.newspapersGet = function(args, res, next) {
   /**
    * parameters expected in the args:
+   * limit (Integer)
+   * order (String)
    **/
 
 var examples = {};
@@ -30,7 +32,9 @@ var examples = {};
 exports.newspapersYearGet = function(args, res, next) {
   /**
    * parameters expected in the args:
-   * year (String)
+   * year (Integer)
+   * limit (Integer)
+   * order (String)
    **/
 
 var examples = {};
@@ -58,8 +62,10 @@ var examples = {};
 exports.newspapersYearMonthGet = function(args, res, next) {
   /**
    * parameters expected in the args:
-   * year (String)
-   * month (String)
+   * year (Integer)
+   * month (Integer)
+   * limit (Integer)
+   * order (String)
    **/
 
 var examples = {};

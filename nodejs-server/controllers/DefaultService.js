@@ -3,7 +3,9 @@
 exports.newspapersDecadeDecadeGet = function(args, res, next) {
   /**
    * parameters expected in the args:
-   * decade (String)
+   * decade (Integer)
+   * limit (Integer)
+   * order (String)
    **/
 
 var examples = {};
