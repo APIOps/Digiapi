@@ -1,0 +1,120 @@
+---
+swagger: "2.0"
+info:
+  description: "API for The National Library of Finland."
+  version: "0.0.2"
+  title: "Digi-API"
+host: "meta.kansalliskirjasto.fi"
+basePath: "/api"
+schemes:
+- "http"
+paths:
+  /journals/:
+    get:
+      description: "Returns list of available journal titles"
+      parameters: []
+      responses:
+        200:
+          description: "Successful response"
+  /newspapers/:
+    get:
+      tags:
+      - "newspapers"
+      description: "Returns list of available newspaper titles"
+      parameters: []
+      responses:
+        200:
+          description: "Successful response"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Newspaper"
+        default:
+          description: "unexpected error"
+          schema:
+            $ref: "#/definitions/Error"
+  /newspapers/decade/:
+    get:
+      description: "Returns list of available journal titles for given decade"
+      parameters: []
+      responses:
+        200:
+          description: "Successful response"
+  /newspapers/{year}:
+    get:
+      tags:
+      - "newspapers"
+      description: "Returns list of available newspaper titles by year"
+      parameters:
+      - name: "year"
+        in: "path"
+        description: "wanted year"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "Successful response"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Newspaper"
+        default:
+          description: "unexpected error"
+          schema:
+            $ref: "#/definitions/Error"
+  /newspapers/{year}/{month}:
+    get:
+      tags:
+      - "newspapers"
+      description: "Returns list of available journal titles for given year and month"
+      parameters:
+      - name: "year"
+        in: "path"
+        description: "wanted year"
+        required: true
+        type: "string"
+      - name: "month"
+        in: "path"
+        description: "wanted month"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "Successful response"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Newspaper"
+        default:
+          description: "unexpected error"
+          schema:
+            $ref: "#/definitions/Error"
+definitions:
+  Newspaper:
+    type: "object"
+    required:
+    - "id"
+    - "title"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      title:
+        type: "string"
+      logo_url:
+        type: "string"
+      publisher_name:
+        type: "string"
+      tag:
+        type: "string"
+  Error:
+    type: "object"
+    required:
+    - "code"
+    - "message"
+    properties:
+      code:
+        type: "integer"
+        format: "int32"
+      message:
+        type: "string"
