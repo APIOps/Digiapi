@@ -80,9 +80,25 @@
                 }
             }
         },
-        "/newspapers/year/month/": {
+        "/newspapers/{year}/{month}": {
             "get": {
                 "description": "Returns list of available journal titles for given year and month",
+                "parameters": [
+                    {
+                        "name": "year",
+                        "description": "wanted year",
+                        "in": "path",
+                        "type": "string",
+                        "required": true
+                    },
+                    {
+                        "name": "month",
+                        "description": "wanted month",
+                        "in": "path",
+                        "type": "string",
+                        "required": true
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "Successful response"
