@@ -82,6 +82,9 @@
         },
         "/newspapers/{year}/{month}": {
             "get": {
+                "tags": [
+                    "newspapers"
+                ],
                 "description": "Returns list of available journal titles for given year and month",
                 "parameters": [
                     {
@@ -142,6 +145,12 @@
                     "format": "int64"
                 },
                 "title": {
+                    "type": "string"
+                },
+                "logo_url": {
+                    "type": "string"
+                },
+                "publisher_name": {
                     "type": "string"
                 },
                 "tag": {
