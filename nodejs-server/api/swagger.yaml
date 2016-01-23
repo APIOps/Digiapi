@@ -9,13 +9,6 @@ basePath: "/api"
 schemes:
 - "http"
 paths:
-  /journals/:
-    get:
-      description: "Returns list of available journal titles"
-      parameters: []
-      responses:
-        200:
-          description: "Successful response"
   /newspapers/:
     get:
       tags:
@@ -33,13 +26,28 @@ paths:
           description: "unexpected error"
           schema:
             $ref: "#/definitions/Error"
-  /newspapers/decade/:
+  /newspapers/decade/{decade}:
     get:
-      description: "Returns list of available journal titles for given decade"
-      parameters: []
+      description: "Returns list of available newspaper titles for given decade. Path\
+        \ parameter 'decade' is expected to be 4-digit. For example '/newspapers/decade/2000'\
+        \ returns titles for 2000-2009."
+      parameters:
+      - name: "decade"
+        in: "path"
+        description: "wanted decade"
+        required: true
+        type: "string"
       responses:
         200:
           description: "Successful response"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Newspaper"
+        default:
+          description: "unexpected error"
+          schema:
+            $ref: "#/definitions/Error"
   /newspapers/{year}:
     get:
       tags:
@@ -66,7 +74,8 @@ paths:
     get:
       tags:
       - "newspapers"
-      description: "Returns list of available journal titles for given year and month"
+      description: "Returns list of available newspaper titles for given year and\
+        \ month"
       parameters:
       - name: "year"
         in: "path"
