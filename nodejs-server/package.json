@@ -1,7 +1,7 @@
 {
   "name": "digi-api",
   "version": "0.0.2",
-  "description": "API for The National Library of Finland.",
+  "description": "Newspapers and journals meta data API for The National Library of Finland. Created with help of apiops.net community in various APIOps Jams",
   "main": "index.js",
   "keywords": [
     "swagger"

@@ -10,6 +10,10 @@ module.exports.newspapersGet = function newspapersGet (req, res, next) {
   Newspapers.newspapersGet(req.swagger.params, res, next);
 };
 
+module.exports.newspapersIdIdGet = function newspapersIdIdGet (req, res, next) {
+  Newspapers.newspapersIdIdGet(req.swagger.params, res, next);
+};
+
 module.exports.newspapersYearGet = function newspapersYearGet (req, res, next) {
   Newspapers.newspapersYearGet(req.swagger.params, res, next);
 };
