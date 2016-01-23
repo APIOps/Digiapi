@@ -2,7 +2,7 @@ swagger: '2.0'
 info:
   version: 0.0.2
   title: Digi-API
-  description: **Newspapers and journals meta data API for The National Library of Finland.** Created with help of apiops.net community in various APIOps Jams
+  description: Newspapers and journals meta data API for The National Library of Finland. Created with help of apiops.net community in various APIOps Jams
 host: meta.kansalliskirjasto.fi
 basePath: /api
 schemes:
