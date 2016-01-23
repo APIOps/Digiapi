@@ -13,6 +13,19 @@ paths:
       tags:
         - newspapers
       description: Returns list of available newspaper titles
+      parameters:
+        - name: limit
+          in: query
+          description: number of newspapers to return
+          type: integer
+          default: 100
+          minimum: 100
+          maximum: 5000
+        - name: order
+          in: query
+          description: sort by title. For ascending use 'asc' and for descending use 'desc')
+          type: string
+          default: "asc"
       responses:
         '200':
           description: Successful response
@@ -35,6 +48,18 @@ paths:
           in: path
           type: integer
           required: true
+        - name: limit
+          in: query
+          description: number of newspapers to return
+          type: integer
+          default: 100
+          minimum: 100
+          maximum: 5000
+        - name: order
+          in: query
+          description: sort by title. For ascending use 'asc' and for descending use 'desc')
+          type: string
+          default: "asc"
       responses:
         '200':
           description: Successful response
@@ -94,6 +119,18 @@ paths:
           in: path
           type: integer
           required: true
+        - name: limit
+          in: query
+          description: number of newspapers to return
+          type: integer
+          default: 1000
+          minimum: 1000
+          maximum: 50000
+        - name: order
+          in: query
+          description: sort by title. For ascending use 'asc' and for descending use 'desc')
+          type: string
+          default: "asc"
       responses:
         '200':
           description: Successful response
