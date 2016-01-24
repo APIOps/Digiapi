@@ -35,4 +35,13 @@ the bin directory will often be found here: `/usr/local/lib/node_modules/swagger
 
     `npm install -g swagger`
 
-## <a name="nosudo"></a>Using npm without sudo
+## Fork Digi-API repository
+
+
+## How to run mockup API
+
+## How to edit API spec
+
+## Contribute changes back
+
+* TODO: Instruction for making branch and making pull request
