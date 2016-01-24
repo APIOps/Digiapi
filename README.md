@@ -12,6 +12,6 @@ Business models for this case are in wiki: https://github.com/APIOps/Digiapi/wik
 ## API designs in Swagger 2.0 format
 In progress version of the [meta API spec](https://github.com/APIOps/Digiapi/blob/master/node-mockup-api/api/swagger/swagger.yaml)  
 
-## Mockup servers
+## Mockup servers and development process for design
 In progress version of the [meta API](https://github.com/APIOps/Digiapi/blob/master/node-mockup-api/)
 
