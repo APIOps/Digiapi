@@ -71,7 +71,7 @@ Or you can use browser and go to above address (`http://localhost:10010/api/news
 
 ## How to read API Documentation
 
-To see all endpoints open documentation, open project in edit mode with following actions. Make use you have installed node, npm and swagger module. You also need [local copy of project](https://github.com/APIOps/Digiapi/blob/master/node-mockup-api/README.md#how-to-run-mockup-digiapi-server). Instructions above. 
+To see all endpoints documentation, open project in edit mode with following actions. Make sure you have installed node, npm and swagger module. You also need [local copy of project](https://github.com/APIOps/Digiapi/blob/master/node-mockup-api/README.md#how-to-run-mockup-digiapi-server). Instructions above. 
 
 1. Open terminal
 2. Go to project folder
