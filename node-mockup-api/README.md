@@ -8,7 +8,7 @@ You can run the API locally and develop API Swagger 2.0 spec with ready-made too
 
 **Instructions:** 
 * How to run local copy of API? 
-* How to edit API spec locally? 
+* [How to edit API spec locally?](https://github.com/APIOps/Digiapi/blob/master/node-mockup-api/README.md#how-to-edit-digiapi-swagger-20-spec) 
 * [How to read API docs locally?](https://github.com/APIOps/Digiapi/blob/master/node-mockup-api/README.md#how-to-read-api-documentation)
 
 
