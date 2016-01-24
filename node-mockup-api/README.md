@@ -101,6 +101,8 @@ After you have taken local copy of DigiAPI in Github, you need to do a few steps
 
 Command should open DigiAPI Swagger 2.0 spec in browser (`http://127.0.0.1:39146/#/`). In the browser window you'll find editable API spec on the **left** side.  
 
+![digiapi docs](https://raw.githubusercontent.com/APIOps/Digiapi/master/node-mockup-api/images/digiapi-spec.png)
+
 ## Contribute changes back
 
 If you want to contribute to the project, you'll need to use branches. 
