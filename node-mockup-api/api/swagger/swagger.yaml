@@ -170,8 +170,152 @@ paths:
           description: unexpected error
           schema:
             $ref: '#/definitions/Error'
+  /journals/:
+    get:
+      x-swagger-router-controller: "newspapers" 
+      operationId: "getJournals"
+      tags:
+        - journals
+      description: Returns list of available journal titles
+      parameters:
+        - name: limit
+          in: query
+          description: number of journals to return
+          type: integer
+          default: 100
+          minimum: 100
+          maximum: 5000
+        - name: order
+          in: query
+          description: "sort by title. For ascending use 'asc' and for descending use 'desc')"
+          type: string
+          default: asc
+      responses:
+        '200':
+          description: Successful response
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Journal'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  '/journals/{year}/{month}':
+    get:
+      x-swagger-router-controller: "journals"
+      tags:
+        - journals
+      description: Returns list of available journal titles for given year and month
+      parameters:
+        - name: year
+          description: wanted year
+          in: path
+          type: integer
+          required: true
+        - name: month
+          description: wanted month
+          in: path
+          type: integer
+          required: true
+        - name: limit
+          in: query
+          description: number of journals to return
+          type: integer
+          default: 100
+          minimum: 100
+          maximum: 5000
+        - name: order
+          in: query
+          description: "sort by title. For ascending use 'asc' and for descending use 'desc')"
+          type: string
+          default: asc
+      responses:
+        '200':
+          description: Successful response
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Journal'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  '/journals/id/{id}':
+    get:
+      x-swagger-router-controller: "journals"
+      tags:
+        - journals
+      description: Returns details of given journal
+      parameters:
+        - name: id
+          description: ID of wanted journal
+          in: path
+          type: integer
+          required: true
+      responses:
+        '200':
+          description: Successful response
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Journal'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+  '/journals/decade/{decade}':
+    get:
+      x-swagger-router-controller: "journals"
+      description: "Returns list of available journals titles for given decade. Path parameter 'decade' is expected to be 4-digit integer. For example '/journals/decade/2000' returns titles for 2000-2009."
+      parameters:
+        - name: decade
+          description: wanted decade
+          in: path
+          type: integer
+          required: true
+        - name: limit
+          in: query
+          description: number of journals to return
+          type: integer
+          default: 1000
+          minimum: 1000
+          maximum: 50000
+        - name: order
+          in: query
+          description: "sort by title. For ascending use 'asc' and for descending use 'desc')"
+          type: string
+          default: asc
+      responses:
+        '200':
+          description: Successful response
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Journal'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
 definitions:
   Newspaper:
+    type: object
+    required:
+      - id
+      - title
+    properties:
+      id:
+        type: integer
+        format: int64
+      title:
+        type: string
+      logo_url:
+        type: string
+      publisher_name:
+        type: string
+      tag:
+        type: string
+  Journal:
     type: object
     required:
       - id
