@@ -77,7 +77,7 @@ To see all endpoints open documentation, open project in edit mode with followin
 
     `swagger project edit`
 
-Command should open DigiAPI Swagger 2.0 spec in browser (`http://127.0.0.1:39146/#/`). In the browser window you'll find documentation on the left side. 
+Command should open DigiAPI Swagger 2.0 spec in browser (`http://127.0.0.1:39146/#/`). In the browser window you'll find documentation on the **right** side. 
 
 
 ## How to edit DigiAPI Swagger 2.0 spec
