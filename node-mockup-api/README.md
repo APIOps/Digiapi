@@ -55,9 +55,14 @@ We use express API framework in our server.
 
 5. Now, call the API!
 
+Easiest test is to use `curl` via command line: 
+
     `curl http://localhost:10010/api/newspapers`
 
-Or you can use browser and go to above address to see mockup response. To see all endpoints open documentation in browser `http://localhost:10010/docs`
+Response will be: 
+`[{"id":1,"title":"Sample text","logo_url":"Sample text","publisher_name":"Sample text","tag":"Sample text"}]`
+
+Or you can use browser and go to above address to see same mockup response. To see all endpoints open documentation in browser `http://localhost:10010/docs`
 
 
 ## How to edit DigiAPI Swagger 2.0 spec
