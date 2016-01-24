@@ -1,7 +1,4 @@
-# DigiAPI
-
-
-[![Stories in Ready](https://badge.waffle.io/APIOps/Digiapi.svg?label=ready&title=Ready)](http://waffle.io/APIOps/Digiapi)
+# DigiAPI [![Stories in Ready](https://badge.waffle.io/APIOps/Digiapi.svg?label=ready&title=Ready)](http://waffle.io/APIOps/Digiapi)
 
 
 ![logo](https://raw.githubusercontent.com/APIOps/Digiapi/master/logo/logo.png)
