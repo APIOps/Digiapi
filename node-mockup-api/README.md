@@ -88,7 +88,7 @@ Command should open DigiAPI Swagger 2.0 spec in browser (`http://127.0.0.1:39146
 
 
 ## How to edit DigiAPI Swagger 2.0 spec
-After you have taken local copy of DigiAPI in Github, you need to do a few steps. Here's how: 
+Here's how. **Note!** Any changes in the spec will be saved in your local copy of the DigiAPI spec file in `api/swagger/swagger.yaml`. 
 
 Make sure you have [installed node, npm](https://github.com/APIOps/Digiapi/tree/master/node-mockup-api#1-install-npm-and-node) and [swagger module](https://github.com/APIOps/Digiapi/tree/master/node-mockup-api#2-install-swagger-module). You will also need [local copy of DigiAPI repository](https://github.com/APIOps/Digiapi/blob/master/node-mockup-api/README.md#how-to-run-mockup-digiapi-server). 
 
