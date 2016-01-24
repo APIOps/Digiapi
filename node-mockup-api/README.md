@@ -1,10 +1,8 @@
 # DigiAPI Meta mockup Node server
 
-Mock mode is useful when you are designing your API model in the Swagger editor, but you're not ready to implement the API's handler/controllers. For example, you might use mock mode when you're trying to decide which API routes you need and what kind of data each API operation should return. Basically, mock mode let's you perfect your API design without writing any Node.js code.
+Mock mode is useful when you are designing your API model in the Swagger editor, but you're not ready to implement the API's handler/controllers. For example, you might use mock mode when you're trying to decide which API routes you need and what kind of data each API operation should return. Basically, mock mode let's you perfect your API design without writing any Node.js code. When you're happy with the overall API design, then you can implement your controller methods. 
 
 **Our latest editable version of DigiAPI spec is in this repository [api/swagger/swagger.yaml](https://github.com/APIOps/Digiapi/blob/master/node-mockup-api/api/swagger/swagger.yaml)**
-
-When you're happy with the overall API design, then you can implement your controller methods. 
 
 This constantly updated mockup server is for developers of the spec and for others to test API locally. Server will be used until we (developers/API -consumers/customer) are happy with the design. After that backend connections are created. 
 You can run the API locally and develop API Swagger 2.0 spec with ready-made tools. You will need: 
