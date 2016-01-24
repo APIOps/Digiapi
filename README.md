@@ -1,5 +1,9 @@
 # DigiAPI
 
+
+[![Stories in Ready](https://badge.waffle.io/APIOps/Digiapi.svg?label=ready&title=Ready)](http://waffle.io/APIOps/Digiapi)
+
+
 ![logo](https://raw.githubusercontent.com/APIOps/Digiapi/master/logo/logo.png)
 
 The API of relates to the strategy of the National Library of Finland (NLF), where openness is one of the corner stones. In addition the Open National Library policy (under work) and Digital Humanism policy include openness and interfaces for the key services as a main targets for the years ahead.
