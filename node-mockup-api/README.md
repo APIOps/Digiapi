@@ -55,16 +55,27 @@ We use express API framework in our server.
 
 5. Now, call the API!
 
-**Easiest test is to use `curl` via command line:** 
+Easiest test is to use `curl` via command line:
 
     `curl http://localhost:10010/api/newspapers`
 
 Response will be: 
     `[{"id":1,"title":"Sample text","logo_url":"Sample text","publisher_name":"Sample text","tag":"Sample text"}]`
 
-**Or you can use browser and go to above address (`http://localhost:10010/api/newspapers`)** to see same mockup response.
+Or you can use browser and go to above address (`http://localhost:10010/api/newspapers`) to see same mockup response.
 
-To see all endpoints open documentation, open project in edit mode with following command
+## How to read API Documentation
+
+To see all endpoints open documentation, open project in edit mode with following actions. Make use you have installed node, npm and swagger module. Instructions above. 
+
+1. Open terminal
+2. Go to project folder
+
+    `cd [path/in/your/computer]/Digiapi/node-mockup-api/`
+
+3. Start project in edit mode
+
+    `swagger project edit`
 
 Command should open DigiAPI Swagger 2.0 spec in browser (`http://127.0.0.1:39146/#/`). In the browser window you'll find documentation on the left side. 
 
