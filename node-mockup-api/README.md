@@ -37,6 +37,8 @@ the bin directory will often be found here: `/usr/local/lib/node_modules/swagger
 
 ## How to run mockup DigiAPI server
 
+We use express API framework in our server.
+
 1. Open terminal 
 
 2. Get local copy of your DigiAPI
@@ -49,7 +51,7 @@ the bin directory will often be found here: `/usr/local/lib/node_modules/swagger
 
 4. Run the project server.
 
-    `swagger project start -m`
+    `swagger project start -m` Option '-m' stands for mockup mode.  
 
 5. Now, call the API!
 
