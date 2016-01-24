@@ -15,3 +15,6 @@ In progress version of the [meta API spec](https://github.com/APIOps/Digiapi/blo
 ## Mockup servers and development process for design
 In progress version of the [meta API](https://github.com/APIOps/Digiapi/blob/master/node-mockup-api/)
 
+## API features
+All API features should be requested as [new issue](https://github.com/APIOps/Digiapi/issues/new) with label `feature`. 
+
