@@ -32,6 +32,10 @@ Of course for APIOPS as a whole, one aim is to learn by doing.
 ## Management
 We use waffle.io for this project: [DigiAPI waffle.io](https://waffle.io/APIOps/Digiapi)
 
+
+[![Throughput Graph](https://graphs.waffle.io/APIOps/Digiapi/throughput.svg)](https://waffle.io/APIOps/Digiapi/metrics)
+
+
 ## Business models
 Business models for this case are in wiki: https://github.com/APIOps/Digiapi/wiki/DigiAPI
 
