@@ -1,4 +1,9 @@
 # Digiapi
+
+The API of relates to the strategy of the National Library of Finland (NLF), where openness is one of the corner stones. In addition the Open National Library policy (under work) and Digital Humanism policy include openness and interfaces for the key services as a main targets for the years ahead.
+
+In addition for the modern user, API is needed in order for the user to find their own ways how to utilize the cultural heritage material. API enables connecting different services and maybe even creation of new kinds of services and products. 
+
 APIOps joint project to collaborately develop an API idea of the National Library of Finland. Aim is to:
 * define API Model Canvas or two for the case and 
 * provide Swagger 2.0 based descriptions for the APIs and
