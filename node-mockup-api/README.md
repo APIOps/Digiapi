@@ -10,7 +10,7 @@ You can run the API locally and develop API Swagger 2.0 spec with ready-made too
 * [How to run local copy of API?](https://github.com/APIOps/Digiapi/blob/master/node-mockup-api/README.md#how-to-run-mockup-digiapi-server) 
 * [How to edit API spec locally?](https://github.com/APIOps/Digiapi/blob/master/node-mockup-api/README.md#how-to-edit-digiapi-swagger-20-spec) 
 * [How to read API docs locally?](https://github.com/APIOps/Digiapi/blob/master/node-mockup-api/README.md#how-to-read-api-documentation)
-
+* How to contribute?
 
 
 ## 1. Install npm and node
@@ -103,7 +103,9 @@ Command should open DigiAPI Swagger 2.0 spec in browser (`http://127.0.0.1:39146
 
 ![digiapi docs](https://raw.githubusercontent.com/APIOps/Digiapi/master/node-mockup-api/images/digiapi-spec.png)
 
-## Contribute changes back
+**Note!** Any changes in the spec will be saved in your local copy of the DigiAPI spec file in `api/swagger/swagger.yaml`. 
+
+## How to contribute 
 
 If you want to contribute to the project, you'll need to use branches. 
 * Create feature branch for contribution. [Create branch in Github ](https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/)
