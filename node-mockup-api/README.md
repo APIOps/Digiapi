@@ -139,4 +139,5 @@ Command should open DigiAPI Swagger 2.0 spec in browser (`http://127.0.0.1:39146
 
 If you want to contribute to the project, you'll need to use branches. 
 * Create feature branch for contribution. [Create branch in Github ](https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/)
-* 
+* You will also need knowledge of [pull requests](https://help.github.com/articles/using-pull-requests/) 
+
