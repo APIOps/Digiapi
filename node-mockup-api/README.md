@@ -64,7 +64,11 @@ We use express API framework in our server.
 
     `cd Digiapi`
 
-4. Run the project server.
+4. Install dependencies 
+
+    `npm install` 
+
+5. Run the project server.
 
     `swagger project start -m` Option '-m' stands for mockup mode.  
 
