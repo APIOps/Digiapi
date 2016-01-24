@@ -37,13 +37,13 @@ the bin directory will often be found here: `/usr/local/lib/node_modules/swagger
 
 ## How to run mockup DigiAPI server
 
-* 1. Open terminal 
+1. Open terminal 
 
-* 2. Get local copy of your DigiAPI
+2. Get local copy of your DigiAPI
  
     `git clone git@github.com:APIOps/Digiapi.git`
 
-* 3. Go to project folder `Digiapi`
+3. Go to project folder `Digiapi`
 
     `cd Digiapi`
 
