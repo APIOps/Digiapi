@@ -9,6 +9,7 @@ Of course for APIOPS as a whole, one aim is to learn by doing.
 ## People and roles
 
 * Tuula Pääkkönen: client and responsible for API Model Canvas
+* Ohad: lean startup expert, business models
 * Jarkko Moilanen: APItalist, responsible for development process and API design
 * Jani Karhunen: developer, one of our API consumers/testers/validator (more needed!)
 
