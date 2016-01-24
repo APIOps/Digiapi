@@ -2,7 +2,7 @@ swagger: '2.0'
 info:
   version: 0.0.2
   title: Digi-API
-  description: Newspapers and journals meta data API for The National Library of Finland.  Created with help of apiops.net community in various APIOps Jams
+  description: Newspapers and journals meta data API for The National Library of Finland. Created with help of apiops.net community in various APIOps Jams
 host: meta.kansalliskirjasto.fi
 basePath: /api
 schemes:
@@ -10,6 +10,8 @@ schemes:
 paths:
   /newspapers/:
     get:
+      x-swagger-router-controller: "newspapers" 
+      operationId: "getNewspapers"
       tags:
         - newspapers
       description: Returns list of available newspaper titles
@@ -39,6 +41,7 @@ paths:
             $ref: '#/definitions/Error'
   '/newspapers/{year}':
     get:
+      x-swagger-router-controller: "newspapers"
       tags:
         - newspapers
       description: Returns list of available newspaper titles by year
@@ -73,6 +76,7 @@ paths:
             $ref: '#/definitions/Error'
   '/newspapers/{year}/{month}':
     get:
+      x-swagger-router-controller: "newspapers"
       tags:
         - newspapers
       description: Returns list of available newspaper titles for given year and month
@@ -112,6 +116,7 @@ paths:
             $ref: '#/definitions/Error'
   '/newspapers/id/{id}':
     get:
+      x-swagger-router-controller: "newspapers"
       tags:
         - newspapers
       description: Returns details of given newspaper
@@ -134,6 +139,7 @@ paths:
             $ref: '#/definitions/Error'
   '/newspapers/decade/{decade}':
     get:
+      x-swagger-router-controller: "newspapers"
       description: "Returns list of available newspaper titles for given decade. Path parameter 'decade' is expected to be 4-digit integer. For example '/newspapers/decade/2000' returns titles for 2000-2009."
       parameters:
         - name: decade
