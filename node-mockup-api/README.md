@@ -6,11 +6,15 @@ When you're happy with the overall API design, then you can implement your contr
 
 This constantly updated mockup server is for developers of the spec and for others to test API locally. Server will be used until we (developers/API -consumers/customer) are happy with the design. After that backend connections are created. 
 You can run the API locally and develop API Swagger 2.0 spec with ready-made tools. You will need: 
-* npm
-* node
-* Swagger module
+* npm 
+* node 
+* Swagger module 
+* git 
+
+Installation instructions below. 
 
 **Instructions:** 
+* [How to install node and npm?](https://github.com/APIOps/Digiapi/blob/master/node-mockup-api/README.md#1-install-npm-and-node)
 * [How to run local copy of API?](https://github.com/APIOps/Digiapi/blob/master/node-mockup-api/README.md#how-to-run-mockup-digiapi-server) 
 * [How to edit API spec locally?](https://github.com/APIOps/Digiapi/blob/master/node-mockup-api/README.md#how-to-edit-digiapi-swagger-20-spec) 
 * [How to read API docs locally?](https://github.com/APIOps/Digiapi/blob/master/node-mockup-api/README.md#how-to-read-api-documentation)
