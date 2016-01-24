@@ -15,6 +15,7 @@ Installation instructions below.
 
 **Instructions:** 
 * [How to install node and npm?](https://github.com/APIOps/Digiapi/blob/master/node-mockup-api/README.md#1-install-npm-and-node)
+* [How to install swagger module?](https://github.com/APIOps/Digiapi/blob/master/node-mockup-api/README.md#2-install-swagger-module)
 * [How to run local copy of API?](https://github.com/APIOps/Digiapi/blob/master/node-mockup-api/README.md#how-to-run-mockup-digiapi-server) 
 * [How to edit API spec locally?](https://github.com/APIOps/Digiapi/blob/master/node-mockup-api/README.md#how-to-edit-digiapi-swagger-20-spec) 
 * [How to read API docs locally?](https://github.com/APIOps/Digiapi/blob/master/node-mockup-api/README.md#how-to-read-api-documentation)
