@@ -20,7 +20,6 @@ Of course for APIOPS as a whole, one aim is to learn by doing.
 * 17.5.2016: Suggest APIOps Jam in API Days 2016 in Tampere. Get ideas for API usage and get developer feedback. 
 * 1.6.2016: Package all for 'sales'
 
-
 ## People and roles
 
 * Tuula Pääkkönen: client and responsible for API Model Canvas
@@ -28,6 +27,8 @@ Of course for APIOPS as a whole, one aim is to learn by doing.
 * Jarkko Moilanen: APItalist, responsible for development process and API design
 * Jani Karhunen: developer, one of our API consumers/testers/validator (more needed!)
 
+## Management
+We use waffle.io for this project: [DigiAPI waffle.io](https://waffle.io/APIOps/Digiapi)
 
 ## Business models
 Business models for this case are in wiki: https://github.com/APIOps/Digiapi/wiki/DigiAPI
