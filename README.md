@@ -17,7 +17,7 @@ Of course for APIOPS as a whole, one aim is to learn by doing.
 * 20.2.2016: Get and describe first developer use case
 * 6.3.2016: APIOps Monthly Jam: Finalize MVP version of API Model Canvas & Finalize Design of MVP API
 * 2.4.2016: APIOps Monthly Jam: Implement good enough mockup responses and launch API in Heroku 
-* 7.5.2016: Organize APIOps Jam to get ideas for API usage and get developer feedback. 
+* 17.5.2016: Suggest APIOps Jam in API Days 2016 in Tampere. Get ideas for API usage and get developer feedback. 
 * 1.6.2016: Package all for 'sales'
 
 
