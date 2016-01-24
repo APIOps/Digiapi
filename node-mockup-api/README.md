@@ -1,4 +1,4 @@
-# DigiAPI mockup Node server
+# DigiAPI Meta mockup Node server
 
 Mock mode is useful when you are designing your API model in the Swagger editor, but you're not ready to implement the API's handler/controllers. For example, you might use mock mode when you're trying to decide which API routes you need and what kind of data each API operation should return. Basically, mock mode let's you perfect your API design without writing any Node.js code.
 
