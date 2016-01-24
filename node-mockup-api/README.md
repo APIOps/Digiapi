@@ -35,13 +35,22 @@ the bin directory will often be found here: `/usr/local/lib/node_modules/swagger
 
     `npm install -g swagger`
 
-## Fork Digi-API repository
+## How to run mockup DigiAPI server
 
+* Open terminal and get local copy of your DigiAPI
+ 
+    `git clone git@github.com:APIOps/Digiapi.git`
 
-## How to run mockup API
+* Go to project folder `Digiapi`
 
-## How to edit API spec
+    `cd Digiapi`
+
+## How to edit DigiAPI Swagger 2.0 spec
+After you have taken local copy of DigiAPI in Github, you need to do a few steps. Here's how: 
+
 
 ## Contribute changes back
 
-* TODO: Instruction for making branch and making pull request
+If you want to contribute to the project, you'll need to use branches. 
+* Create feature branch for contribution. [Create branch in Github ](https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/)
+* 
