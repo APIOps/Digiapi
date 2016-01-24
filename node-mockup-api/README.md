@@ -47,6 +47,15 @@ the bin directory will often be found here: `/usr/local/lib/node_modules/swagger
 
     `cd Digiapi`
 
+4. Run the project server.
+
+    `swagger project start -m`
+
+5. Now, call the API!
+
+    `curl http://localhost:10010/api/newspapers`
+
+Or you can use browser and go to above address to see mockup response. To see all endpoints open documentation in browser `http://localhost:10010/docs`
 
 
 ## How to edit DigiAPI Swagger 2.0 spec
