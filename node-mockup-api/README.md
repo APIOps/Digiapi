@@ -6,7 +6,12 @@ You can run the API locally and develop API Swagger 2.0 spec with ready-made too
 * node
 * Swagger module
 
-Instructions below. 
+**Instructions:** 
+* How to run local copy of API? 
+* How to edit API spec locally? 
+* How to read API docs locally? 
+
+
 
 ## 1. Install npm and node
 * [How to install npm and node with package manager](https://nodejs.org/en/download/package-manager/)
@@ -85,6 +90,16 @@ Command should open DigiAPI Swagger 2.0 spec in browser (`http://127.0.0.1:39146
 ## How to edit DigiAPI Swagger 2.0 spec
 After you have taken local copy of DigiAPI in Github, you need to do a few steps. Here's how: 
 
+1. Open terminal
+2. Go to project folder
+
+    `cd [path/in/your/computer]/Digiapi/node-mockup-api/`
+
+3. Start project in edit mode
+
+    `swagger project edit`
+
+Command should open DigiAPI Swagger 2.0 spec in browser (`http://127.0.0.1:39146/#/`). In the browser window you'll find editable API spec on the **left** side.  
 
 ## Contribute changes back
 
