@@ -92,7 +92,11 @@ To see all endpoints documentation, open project in edit mode with following act
 
     `cd [path/in/your/computer]/Digiapi/node-mockup-api/`
 
-3. Start project in edit mode
+3. Install dependencies
+
+    `npm install` 
+
+4. Start project in edit mode
 
     `swagger project edit`
 
