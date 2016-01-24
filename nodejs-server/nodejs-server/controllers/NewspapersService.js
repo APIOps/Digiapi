@@ -1,6 +1,6 @@
 'use strict';
 
-exports.getNewspapers = function(args, res, next) {
+exports.newspapersGet = function(args, res, next) {
   /**
    * parameters expected in the args:
    * limit (Integer)

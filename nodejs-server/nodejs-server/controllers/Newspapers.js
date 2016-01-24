@@ -6,8 +6,8 @@ var url = require('url');
 var Newspapers = require('./NewspapersService');
 
 
-module.exports.getNewspapers = function getNewspapers (req, res, next) {
-  Newspapers.getNewspapers(req.swagger.params, res, next);
+module.exports.newspapersGet = function newspapersGet (req, res, next) {
+  Newspapers.newspapersGet(req.swagger.params, res, next);
 };
 
 module.exports.newspapersIdIdGet = function newspapersIdIdGet (req, res, next) {

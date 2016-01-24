@@ -15,7 +15,6 @@ paths:
       tags:
       - "newspapers"
       description: "Returns list of available newspaper titles"
-      operationId: "getNewspapers"
       parameters:
       - name: "limit"
         in: "query"
