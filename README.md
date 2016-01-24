@@ -11,6 +11,15 @@ APIOps joint project to collaborately develop an API idea of the National Librar
 
 Of course for APIOPS as a whole, one aim is to learn by doing. 
 
+# Project roadmap
+
+* 6.2.2016: APIOps Monthly Jam
+* 20.2.2016: Get and describe first developer use case
+* 6.3.2016: APIOps Monthly Jam: Finalize MVP version of API Model Canvas & Finalize Design of MVP API
+* 2.4.2016: APIOps Monthly Jam: Implement good enough mockup responses and launch API in Heroku 
+* 5/2016: organize APIOps Jam to get ideas for API usage and get developer feedback
+
+
 ## People and roles
 
 * Tuula Pääkkönen: client and responsible for API Model Canvas
