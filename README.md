@@ -10,8 +10,8 @@ Of course for APIOPS as a whole, one aim is to learn by doing.
 Business models for this case are in wiki: https://github.com/APIOps/Digiapi/wiki/DigiAPI
 
 ## API designs in Swagger 2.0 format
-In progress version of the [meta API spec](https://github.com/APIOps/Digiapi/blob/master/swagger.yaml)  
+In progress version of the [meta API spec](https://github.com/APIOps/Digiapi/blob/master/node-mockup-api/api/swagger/swagger.yaml)  
 
 ## Mockup servers
-In progress version of the [meta API](https://github.com/APIOps/Digiapi/tree/master/nodejs-server)
+In progress version of the [meta API](https://github.com/APIOps/Digiapi/blob/master/node-mockup-api/)
 
