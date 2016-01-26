@@ -126,7 +126,7 @@ paths:
       description: Returns details of given newspaper
       parameters:
         - name: id
-          description: ID of wanted newspaper
+          description: ID of wanted newspaper. Id is ISSN/NBN (identification) , example '1457-4756'
           in: path
           type: integer
           required: true
@@ -250,12 +250,12 @@ paths:
       x-swagger-router-controller: "journals"
       tags:
         - journals
-      description: Returns details of given journal
+      description: Returns details of given journal. Id is ISSN/NBN (identification) , example '1457-4756'
       parameters:
         - name: id
           description: ID of wanted journal
           in: path
-          type: integer
+          type: string
           required: true
       responses:
         '200':
@@ -313,10 +313,11 @@ definitions:
         format: int64
       title:
         type: string
-      logo_url:
-        type: string
       publisher_name:
         type: string
+      lang:
+        type: string
+        description: "language code such as 'de' (ISO 3166-1)"
       tag:
         type: string
   Journal:
@@ -334,6 +335,9 @@ definitions:
         type: string
       publisher_name:
         type: string
+      lang:
+        type: string
+        description: "language code such as 'de' (ISO 3166-1)"
       tag:
         type: string
   Error:
